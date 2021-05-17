@@ -399,3 +399,112 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 21ms (Views: 13.2ms | ActiveRecord: 0.0ms)
 
 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for 192.168.208.1 at 2021-05-17 21:01:18 +0900
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /usr/local/bundle/gems/activerecord-5.2.6/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/bundle/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/bundle/gems/railties-5.2.6/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mRestaurant Create (9.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "fee", "time_required", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "testレストラン_0"], ["fee", 100], ["time_required", 10], ["created_at", "2021-05-17 12:08:01.374723"], ["updated_at", "2021-05-17 12:08:01.374723"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (9.9ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_0"], ["price", 500], ["description", "フード_0の説明文です。"], ["created_at", "2021-05-17 12:08:01.387317"], ["updated_at", "2021-05-17 12:08:01.387317"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_1"], ["price", 500], ["description", "フード_1の説明文です。"], ["created_at", "2021-05-17 12:08:01.399956"], ["updated_at", "2021-05-17 12:08:01.399956"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_2"], ["price", 500], ["description", "フード_2の説明文です。"], ["created_at", "2021-05-17 12:08:01.403402"], ["updated_at", "2021-05-17 12:08:01.403402"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_3"], ["price", 500], ["description", "フード_3の説明文です。"], ["created_at", "2021-05-17 12:08:01.406248"], ["updated_at", "2021-05-17 12:08:01.406248"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_4"], ["price", 500], ["description", "フード_4の説明文です。"], ["created_at", "2021-05-17 12:08:01.409616"], ["updated_at", "2021-05-17 12:08:01.409616"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.5ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_5"], ["price", 500], ["description", "フード_5の説明文です。"], ["created_at", "2021-05-17 12:08:01.412389"], ["updated_at", "2021-05-17 12:08:01.412389"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_6"], ["price", 500], ["description", "フード_6の説明文です。"], ["created_at", "2021-05-17 12:08:01.416196"], ["updated_at", "2021-05-17 12:08:01.416196"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_7"], ["price", 500], ["description", "フード_7の説明文です。"], ["created_at", "2021-05-17 12:08:01.418971"], ["updated_at", "2021-05-17 12:08:01.418971"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.5ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_8"], ["price", 500], ["description", "フード_8の説明文です。"], ["created_at", "2021-05-17 12:08:01.422339"], ["updated_at", "2021-05-17 12:08:01.422339"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_9"], ["price", 500], ["description", "フード_9の説明文です。"], ["created_at", "2021-05-17 12:08:01.425208"], ["updated_at", "2021-05-17 12:08:01.425208"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.7ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_10"], ["price", 500], ["description", "フード_10の説明文です。"], ["created_at", "2021-05-17 12:08:01.436127"], ["updated_at", "2021-05-17 12:08:01.436127"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (2.3ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 1], ["name", "フード名_11"], ["price", 500], ["description", "フード_11の説明文です。"], ["created_at", "2021-05-17 12:08:01.439782"], ["updated_at", "2021-05-17 12:08:01.439782"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mRestaurant Create (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "fee", "time_required", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "testレストラン_1"], ["fee", 100], ["time_required", 10], ["created_at", "2021-05-17 12:08:01.453818"], ["updated_at", "2021-05-17 12:08:01.453818"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.7ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_0"], ["price", 500], ["description", "フード_0の説明文です。"], ["created_at", "2021-05-17 12:08:01.457046"], ["updated_at", "2021-05-17 12:08:01.457046"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.9ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_1"], ["price", 500], ["description", "フード_1の説明文です。"], ["created_at", "2021-05-17 12:08:01.460601"], ["updated_at", "2021-05-17 12:08:01.460601"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.8ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_2"], ["price", 500], ["description", "フード_2の説明文です。"], ["created_at", "2021-05-17 12:08:01.463936"], ["updated_at", "2021-05-17 12:08:01.463936"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.7ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_3"], ["price", 500], ["description", "フード_3の説明文です。"], ["created_at", "2021-05-17 12:08:01.467303"], ["updated_at", "2021-05-17 12:08:01.467303"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.7ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_4"], ["price", 500], ["description", "フード_4の説明文です。"], ["created_at", "2021-05-17 12:08:01.476181"], ["updated_at", "2021-05-17 12:08:01.476181"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.5ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_5"], ["price", 500], ["description", "フード_5の説明文です。"], ["created_at", "2021-05-17 12:08:01.479320"], ["updated_at", "2021-05-17 12:08:01.479320"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.7ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_6"], ["price", 500], ["description", "フード_6の説明文です。"], ["created_at", "2021-05-17 12:08:01.482820"], ["updated_at", "2021-05-17 12:08:01.482820"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_7"], ["price", 500], ["description", "フード_7の説明文です。"], ["created_at", "2021-05-17 12:08:01.485907"], ["updated_at", "2021-05-17 12:08:01.485907"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_8"], ["price", 500], ["description", "フード_8の説明文です。"], ["created_at", "2021-05-17 12:08:01.489305"], ["updated_at", "2021-05-17 12:08:01.489305"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_9"], ["price", 500], ["description", "フード_9の説明文です。"], ["created_at", "2021-05-17 12:08:01.492085"], ["updated_at", "2021-05-17 12:08:01.492085"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_10"], ["price", 500], ["description", "フード_10の説明文です。"], ["created_at", "2021-05-17 12:08:01.495324"], ["updated_at", "2021-05-17 12:08:01.495324"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 2], ["name", "フード名_11"], ["price", 500], ["description", "フード_11の説明文です。"], ["created_at", "2021-05-17 12:08:01.498723"], ["updated_at", "2021-05-17 12:08:01.498723"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:24
+  [1m[36mRestaurant Create (0.6ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "fee", "time_required", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", "testレストラン_2"], ["fee", 100], ["time_required", 10], ["created_at", "2021-05-17 12:08:01.509609"], ["updated_at", "2021-05-17 12:08:01.509609"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_0"], ["price", 500], ["description", "フード_0の説明文です。"], ["created_at", "2021-05-17 12:08:01.512680"], ["updated_at", "2021-05-17 12:08:01.512680"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_1"], ["price", 500], ["description", "フード_1の説明文です。"], ["created_at", "2021-05-17 12:08:01.516217"], ["updated_at", "2021-05-17 12:08:01.516217"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_2"], ["price", 500], ["description", "フード_2の説明文です。"], ["created_at", "2021-05-17 12:08:01.523691"], ["updated_at", "2021-05-17 12:08:01.523691"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_3"], ["price", 500], ["description", "フード_3の説明文です。"], ["created_at", "2021-05-17 12:08:01.526730"], ["updated_at", "2021-05-17 12:08:01.526730"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.5ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_4"], ["price", 500], ["description", "フード_4の説明文です。"], ["created_at", "2021-05-17 12:08:01.529558"], ["updated_at", "2021-05-17 12:08:01.529558"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_5"], ["price", 500], ["description", "フード_5の説明文です。"], ["created_at", "2021-05-17 12:08:01.532633"], ["updated_at", "2021-05-17 12:08:01.532633"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.5ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_6"], ["price", 500], ["description", "フード_6の説明文です。"], ["created_at", "2021-05-17 12:08:01.535329"], ["updated_at", "2021-05-17 12:08:01.535329"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_7"], ["price", 500], ["description", "フード_7の説明文です。"], ["created_at", "2021-05-17 12:08:01.538136"], ["updated_at", "2021-05-17 12:08:01.538136"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.7ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_8"], ["price", 500], ["description", "フード_8の説明文です。"], ["created_at", "2021-05-17 12:08:01.540863"], ["updated_at", "2021-05-17 12:08:01.540863"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.5ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_9"], ["price", 500], ["description", "フード_9の説明文です。"], ["created_at", "2021-05-17 12:08:01.544174"], ["updated_at", "2021-05-17 12:08:01.544174"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.7ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_10"], ["price", 500], ["description", "フード_10の説明文です。"], ["created_at", "2021-05-17 12:08:01.547033"], ["updated_at", "2021-05-17 12:08:01.547033"]]
+  ↳ db/seeds.rb:24
+  [1m[36mFood Create (0.6ms)[0m  [1m[32mINSERT INTO "foods" ("restaurant_id", "name", "price", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["restaurant_id", 3], ["name", "フード名_11"], ["price", 500], ["description", "フード_11の説明文です。"], ["created_at", "2021-05-17 12:08:01.550071"], ["updated_at", "2021-05-17 12:08:01.550071"]]
+  ↳ db/seeds.rb:24
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:24
